@@ -84,7 +84,7 @@ input:hover{
     width: 100%;
     padding: 20px 0px;
     margin: 1px 0;
-    font-size: 25px;;
+    font-size: 15px;;
     
 }
 .btn{
@@ -113,6 +113,13 @@ input:hover{
     outline-color: rgba(49, 138, 172, 0);
     outline-offset: 80px;
     text-shadow: 1px 1px 6px #fff;
+}
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
 }
 
 @media only screen and (max-width: 1087px){

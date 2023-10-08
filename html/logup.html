@@ -8,16 +8,17 @@
     <title>Registro | Tecnik</title>
 </head>
 <body>
+
     <section>
         <div  class="form-principal">
-            <form class="form" action="/procesar_registro" method="post">
+            <form id="form" class="form"  method="post">
                 <img class="new-user" src="/media/new-user.png" alt="">
                 <h2 class="tittle-form">Registro Usuario Nuevo</h2>
-                <input type="text" id="nombre" name="nombre" placeholder=" Nombre" required><br><br>
-                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required><br><br>
-                <input type="email" id="email" name="email" placeholder="Correo" required><br><br>
-                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required><br><br>
-                <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" placeholder="Confirmar Contraseña" required><br><br>
+                <input type="text" id="nombre" name="nombre" placeholder=" Nombre" required ><br><br>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required ><br><br>
+                <input type="email" id="email" name="email" placeholder="Correo" ><br><br>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" ><br><br>
+                <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" placeholder="Confirmar Contraseña" ><br><br>
                 <input type="text" id="direccion" name="direccion" placeholder="Dirección" required><br><br>
                 <button type="submit">Registrarse</button>
             </form>
@@ -26,6 +27,6 @@
     </section>
     
     
-    
+<script src="../Js/validarCaracteresLogup.js"></script>     
 </body>
 </html>
