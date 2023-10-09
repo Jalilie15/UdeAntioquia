@@ -62,14 +62,20 @@ verCarrito.addEventListener("click", () =>{
     
 
     carritoPedido.forEach((product)=>{
+    let btnEliminar = 0;
     let carritoCargado = document.createElement("div");
     carritoCargado.className= "modal-content";
     carritoCargado.innerHTML  =`
     <img src="${product.img}">
     <h3>${product.nombre}</h3>
-    <p>$${product.precio} <p> 
+    <p>$${product.precio} <p>
+    <i class="fa-solid fa-trash">➕</i> 
+
     `;
     modalcontainer.append(carritoCargado);
+    function borrardeCarrito (a){
+        carritoPedido.splice(a,1);
+    }
     });
 
 
@@ -82,9 +88,26 @@ verCarrito.addEventListener("click", () =>{
 
     let pagarBtn = document.createElement("button");
     pagarBtn.className="btn-pagar";
+    pagarBtn.setAttribute("id", "btn-pagar");
     pagarBtn.innerText="Realizar Pago";
     modalcontainer.append(pagarBtn);
+
+    pagarBtn.addEventListener("click",()=>{
+        
+        alert(`
+        -----------------------------------------------------
+
+        GRACIAS POR SU COMPRA, EL VALOR DE PAGO ES:$ ${total}
+        
+      
+        -----------------------------------------------------
+        `);
+        modalcontainer.style.display="none";
+        carritoPedido=[];
+
+    });
 });
+
 
 
 
