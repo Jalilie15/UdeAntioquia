@@ -34,6 +34,9 @@ ul.navbar {
     
 }
 .btn-buscar{
+  margin-right: 15px;
+}
+.btn-buscar{
     background-color: orangered;
     color: azure;
     color: #fff !important;
@@ -88,22 +91,29 @@ li.dropdown:hover .dropdown-content {
 }
 
 #verCarrito{
+  padding: 5px;
+}
+
+#verCarrito{
+    border-radius:50px;
     height: 40px;
     width: auto;
-    padding-left: 50px;
-    padding-right: 25px;
+    margin: 5px;
+    
     transition: all 0.3s; 
   }
   #verCarrito:hover{
   cursor: pointer;
-  transform: scale(1.2);
-    
+  transform: scale(1.2);   
   }
+  
   #correo{
+    
     height: 40px;
     width: auto;
     padding-right: 15px;
     transition: all 0.3s;
+    margin: 5px;
   }
   #correo:hover{
   cursor: pointer;
