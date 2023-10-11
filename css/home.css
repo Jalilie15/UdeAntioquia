@@ -92,6 +92,7 @@ li.dropdown:hover .dropdown-content {
 
 #verCarrito{
   padding: 5px;
+  border: 1px solid black;
 }
 
 #verCarrito{
@@ -184,15 +185,21 @@ li.dropdown:hover .dropdown-content {
     background-color: black;
     color:white;
     width: 100%;
+    
   }
 .modal-header-title{
   justify-self: start;
   padding-left: 25px;
+  padding-top: 10px;
 }
 .modal-header-btn{
   cursor: pointer;
   margin-right: 25px;
+  padding-top: 15px;
   
+}
+#fa-solid {
+  cursor:pointer;
 }
 
 .modal-container::-webkit-scrollbar{
@@ -213,6 +220,7 @@ li.dropdown:hover .dropdown-content {
   top: 12vh;
   scrollbar-color: none;
   border-radius:  25px;
+ 
 }
 .card button:hover{
   opacity: 0.7;

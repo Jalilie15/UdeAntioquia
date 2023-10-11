@@ -7,9 +7,14 @@ let numText = document.getElementById("contador-carrito");
 let carritoPedido = []; //array donde se guardan los contenidos del carrito
 let num = 0;
 function  aumentarNumCarrito (){
-    numText.innerHTML =`${num}`;
-    
+    numText.innerHTML =`${num}`;   
 }
+
+
+
+
+
+
 
 //creamos el for que recorrerá los productos.
 productos.forEach((contenidoProductos) =>{
@@ -34,7 +39,7 @@ productos.forEach((contenidoProductos) =>{
     content.append(btnComprar);
     //evento que agrega al array los elementos a mostrar en el carrito de compras
     btnComprar.addEventListener("click", () =>{
-        verCarrito.style.background ="red";
+        verCarrito.style.background ="orangered";
         verCarrito.style.border_radius = + "50";
         num += 1;
         aumentarNumCarrito()
@@ -43,6 +48,7 @@ productos.forEach((contenidoProductos) =>{
             img: contenidoProductos.imageUrl,
             nombre: contenidoProductos.name,
             precio: contenidoProductos.precio
+            
 
         });
         
@@ -57,7 +63,7 @@ verCarrito.addEventListener("click", () =>{
     const modalheader = document.createElement("div");
     modalheader.className = "modal-header"
     modalheader.innerHTML = `
-        <h1 class="modal-header-title">Carrito.</h1>
+        <h1 class="modal-header-title">Carrito</h1>
     `;
     modalcontainer.append(modalheader);
 
@@ -69,25 +75,35 @@ verCarrito.addEventListener("click", () =>{
     
     modalBtn.addEventListener("click",() =>{
         modalcontainer.style.display="none";
+
     });
+
+
     
     //control para recorrer los productos dentro del carrito de compras
     carritoPedido.forEach((product)=>{
-    let btnEliminar = 0;
+    
     let carritoCargado = document.createElement("div");
     carritoCargado.className= "modal-content";
     carritoCargado.innerHTML  =`
     <img src="${product.img}">
     <h3>${product.nombre}</h3>
     <p>$${product.precio} <p>
-    <i class="fa-solid fa-trash">➕</i> 
+    <i id="fa-solid">➕</i> 
 
     `;
     modalcontainer.append(carritoCargado);
-    function borrardeCarrito (a){
-        carritoPedido.splice(a,1);
-    }
+
+
+
+    
     });
+
+
+   
+
+
+    
 
     // estructura que suma los elementos de precios
     const total = carritoPedido.reduce((acu, el) => acu + el.precio, 0);
@@ -102,6 +118,22 @@ verCarrito.addEventListener("click", () =>{
     pagarBtn.setAttribute("id", "btn-pagar");
     pagarBtn.innerText="Realizar Pago";
     modalcontainer.append(pagarBtn);
+    
+
+    //evento que elimina elementos del carrito
+    let carritoDelete = document.getElementById("fa-solid");
+    carritoDelete.addEventListener("click", () =>{
+        carritoCargado.splice(a,1);
+    })
+
+
+
+
+
+
+
+
+
 
     //evento que genera un "pago" virtual simulado
     pagarBtn.addEventListener("click",()=>{
@@ -116,6 +148,7 @@ verCarrito.addEventListener("click", () =>{
         `);
         modalcontainer.style.display="none";
         carritoPedido=[];
+        location.reload();
 
     });
 });
