@@ -1,0 +1,22 @@
+.product-card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px;
+    text-align: center;
+}
+.card{
+    margin: 50px;
+}
+.card button{
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: aliceblue;
+    background-color: orangered;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 15px;
+}
