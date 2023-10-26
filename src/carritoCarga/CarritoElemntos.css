@@ -15,3 +15,20 @@
 .cartTotal{
     text-align: center;
 }
+.cart-message-center{
+    text-align: center;
+    margin-top: 40px;
+}
+.button-pay{
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: aliceblue;
+    background-color: orangered;
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+}

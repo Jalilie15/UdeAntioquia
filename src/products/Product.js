@@ -17,8 +17,8 @@ const Product = () => {
         <div className="card" key={product.id}>
             <img src={product.imageUrl} alt="img-product-card" />
             <h3>{product.name}</h3>
-            <h3>{product.precio}</h3>
-            <h3>${product.descripcion}</h3>
+            <h3>${product.precio}</h3>
+            <h3>{product.descripcion}</h3>
             <button onClick={() =>byProducts (product)}>Agregar a 🛒</button>
 
 

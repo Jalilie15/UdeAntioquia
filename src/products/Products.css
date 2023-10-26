@@ -8,6 +8,10 @@
 .card{
     margin: 50px;
 }
+.card img{
+    height: 170px;
+    width: 150px;
+}
 .card button{
     border: none;
     outline: 0;

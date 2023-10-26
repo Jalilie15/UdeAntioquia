@@ -10,7 +10,7 @@ export const CarritoTotal = () => {
     <div className="cartTotal">
 
         <h3>Total a Pagar: ${total}</h3>
-        <button> Realizar Pago </button>
+        <button className="button-pay"> Realizar Pago </button>
     </div>
   );
   
