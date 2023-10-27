@@ -1,6 +1,6 @@
-import Navbar from '../navbar/Navbar';
-import Banner from '../banner/Banner';
-import Product from '../products/Product';
+import Navbar from '../componentes/Navbar';
+import Banner from '../componentes/Banner';
+import Product from '../componentes/Product';
 
 
 const Inicio = () => {

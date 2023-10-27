@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { dataContext } from "../context/DataContext";
+import { dataContext } from "./DataContext"; 
 import CarrtitoElementos from "./CarrtitoElementos";
 import { CarritoTotal } from "./CarritoTotal";
 

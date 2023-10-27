@@ -1,6 +1,6 @@
-import '../products/Products.css'
+import './Products.css'
 import { useContext } from "react";
-import { dataContext } from "../context/DataContext";
+import { dataContext } from './DataContext';
 
 
 

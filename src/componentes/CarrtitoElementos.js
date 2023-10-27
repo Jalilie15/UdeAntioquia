@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { dataContext } from "../context/DataContext";
-import '../carritoCarga/CarritoElemntos.css'
+import { dataContext } from "./DataContext";
+import './CarritoElemntos.css'
 
 
 
