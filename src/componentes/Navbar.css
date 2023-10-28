@@ -10,18 +10,22 @@
     background-color: #1b1b1b;
     color:white;
 }
+.lista-nav{
+    display: inline-flex;
+    padding-right: 30px;
+    font-size: 25px;
+    list-style: none;
+    
+}
+.lista-nav li{
+    list-style: none;
+    text-decoration: none; 
+}
+
 .navbar-logo{
     justify-self: start;
     margin-left: 20px;
     color: aliceblue;
     margin-top: 4vh;
     cursor: pointer;   
-}
-.seeCarrito{
-    font-size: 25px;
-    margin-right: 20px;
-    margin-top: 4vh;
-    cursor: pointer;
-    text-decoration: none;
-    
 }

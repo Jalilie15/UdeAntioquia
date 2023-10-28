@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.container label{
+    font-size: 25px;
+    padding-top: 20px;
+}
+.container input{
+    padding: 10px;
+    border-radius: 15px;
+}
+.ingresar{
+    margin-top: 25px;
+    font-size: 20px;
+    padding: 15px;
+    
+}
+.container{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: 
+    url("https://images3.alphacoders.com/273/273289.jpg"); 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+

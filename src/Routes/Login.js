@@ -1,8 +1,11 @@
+import Navbar from "../componentes/Navbar";
+import './login.css'
+
 function Login() {
     function enviarDatos(event) {
       event.preventDefault();
   
-      //validar
+      
       fetch("/login", {
         method: "post",
         headers: {
@@ -16,14 +19,15 @@ function Login() {
     }
     return (
       <>
+      <Navbar></Navbar>
         
         <div className="container">
           <form className="col-4 d-flex flex-column justify-content-around" onSubmit={enviarDatos}>
-            <label>username:</label>
+            <label>Usuario:</label>
             <input id="username"></input>
-            <label>password:</label>
+            <label>Contraseña:</label>
             <input type="password" id="password"></input>
-            <input type="submit" value="Iniciar sesion"></input>
+            <input className="ingresar" type="submit" value="Iniciar sesion"></input>
           </form>
         </div>
       </>
